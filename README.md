@@ -1,4 +1,3 @@
-```markdown
 # API
 
 O objetivo da construção desta API é modularizar o projeto, dividindo a aplicação em
