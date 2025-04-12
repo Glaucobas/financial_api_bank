@@ -1,15 +1,14 @@
+```markdown
 # API
 
-O objetivo da construção desta API é modularizar o projeto, dividindo a aplicação em
-microserviços. Cada microserviço é capaz de trabalhar de forma independente com suas
-requisições. A API possui um banco de dados próprio (SQLite) e gerencia todas as
-operações de gravação, atualização e remoção de dados.
+O objetivo da construção desta API é modularizar o projeto, dividindo a aplicação em microserviços. Cada microserviço é capaz de trabalhar de forma independente com suas requisições. A API possui um banco de dados próprio (SQLite) e gerencia todas as operações de gravação, atualização e remoção de dados.
 
 ---
 
 ## Estrutura do Projeto
 
 - **app.py**: Arquivo principal para execução da API.
+- **database/**: Contém o banco de dados.
 - **models/**: Contém as definições das tabelas e a configuração do banco de dados.
 - **schema/**: Define os esquema dos dados.
 - **requirements.txt**: Lista de dependências necessárias para executar a aplicação.
@@ -118,6 +117,10 @@ Abaixo está a estrutura básica do projeto:
 ```
 financial_api_bank /
 ├── app.py               # Arquivo principal
+├── database/            # Pasta do Banco de dados
+│   ├── db.sqlite3       # Banco de dados
+├── log/                 # Pasta de logs
+│   ├── app.log          # logs
 ├── models/              # Definições do banco de dados
 │   ├── __init__.py      # Inicialização do banco
 │   ├── table.py         # Definição das tabelas
