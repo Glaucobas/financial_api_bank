@@ -1,5 +1,4 @@
-```markdown
-# API
+# API Bank
 
 O objetivo da construção desta API é modularizar o projeto, dividindo a aplicação em microserviços. Cada microserviço é capaz de trabalhar de forma independente com suas requisições. A API possui um banco de dados próprio (SQLite) e gerencia todas as operações de gravação, atualização e remoção de dados.
 
@@ -70,12 +69,12 @@ pip install -r requirements.txt
 ### **6. Executar a API**
 Após instalar as dependências, execute a aplicação:
 ```bash
-flask run --host 0.0.0.0 --port 5000 --reload
+flask run --host 0.0.0.0 --port 5002 --reload
 ```
 
 Se tudo estiver configurado corretamente, a API será inicializada e estará acessível no endereço:
 ```
-http://127.0.0.1:5000
+http://127.0.0.1:5002
 ```
 
 ---
@@ -106,7 +105,7 @@ docker ps
 ### **5. Acessar a API no Docker**
 Com o container rodando, a API estará disponível no mesmo endereço:
 ```
-http://127.0.0.1:5000
+http://127.0.0.1:5002
 ```
 
 ---
