@@ -93,7 +93,7 @@ docker build -t financial_api_bank .
 ### **3. Executar o Container**
 Para rodar o container criado:
 ```bash
-docker run -d -p 5002:5000 --name financial_api_bank financial_api_bank
+docker run -d -p 5002:5002 --name financial_api_bank financial_api_bank
 ```
 
 ### **4. Verificar o Status do Container**
